@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Pousada Paraíso · Ilha Grande — o porto seguro do seu descanso</title>
+<meta name="description" content="Pousada Paraíso, Vila do Abraão, Ilha Grande. Café da manhã completo às 08h, limpeza impecável e suporte 24h. Reserve o seu descanso na ilha sem carros." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500;600;700;800&family=Baloo+Thambi+2:wght@600;700;800&family=Cabin:wght@400;500;600&family=League+Spartan:wght@500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Pousada Paraíso — início">
+      <span class="brand__mark" aria-hidden="true"></span>
+      <span>Paraíso<small>Ilha Grande</small></span>
+    </a>
+    <nav aria-label="Navegação principal">
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#quartos">Quartos</a></li>
+        <li><a href="#pacotes">Pacotes</a></li>
+        <li><a href="#chegar">Como chegar</a></li>
+        <li><a href="#avaliacoes">Avaliações</a></li>
+      </ul>
+    </nav>
+    <div class="nav__cta">
+      <a class="btn btn--sol btn--sm" href="#reservar">Reservar ▸</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Sol assinatura -->
+<div class="sun" id="sun" aria-hidden="true"></div>
+
+<main id="top">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="hero">
+    <div class="hero__ph" aria-hidden="true">[ A DEFINIR · foto real do amanhecer / vista da pousada ]</div>
+    <div class="wrap">
+      <div class="hero__inner">
+        <span class="hero__kicker">Vila do Abraão · Ilha Grande</span>
+        <h1 class="display">A manhã mais tranquila da Ilha&nbsp;Grande.</h1>
+        <p class="hero__sub">Uma ilha sem carros, o mar logo ali e o café da manhã servido às 08h. Você só precisa acordar — o resto a gente cuida.</p>
+        <div class="hero__actions">
+          <a class="btn btn--sol" href="#reservar">Reservar minha estadia ▸</a>
+          <span class="hero__rating">
+            <span class="stars" aria-hidden="true">★★★★☆</span>
+            <span><b>4,0</b>/5 · <span class="def-badge">A DEFINIR nota oficial</span></span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SOBRE / PROMESSA ================= -->
+  <section class="section" id="sobre">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">A pousada</span>
+        <h2>Um porto seguro, não só um quarto.</h2>
+        <p>Reservar em destino isolado dá insegurança. Aqui não: padrão de hotelaria, limpeza inegociável e gente do Grupo Ilha por perto pra resolver qualquer coisa — na hora.</p>
+      </div>
+
+      <div class="promise">
+        <div class="item">
+          <div class="ic" aria-hidden="true">🧹</div>
+          <h3>Limpeza inegociável</h3>
+          <p>Enxoval padrão hotelaria e limpeza diária. É o nosso ponto de honra.</p>
+        </div>
+        <div class="item">
+          <div class="ic" aria-hidden="true">☕</div>
+          <h3>Café às 08h, pontual</h3>
+          <p>Café da manhã completo, servido no horário. A ilha te espera depois.</p>
+        </div>
+        <div class="item">
+          <div class="ic" aria-hidden="true">🛟</div>
+          <h3>Suporte 24h</h3>
+          <p>Concierge básico e apoio local do Grupo Ilha durante toda a estadia.</p>
+        </div>
+        <div class="item">
+          <div class="ic" aria-hidden="true">🌿</div>
+          <h3>Sentir-se em casa</h3>
+          <p>Ar-condicionado, Wi-Fi e o verde da Mata Atlântica em volta.</p>
+        </div>
+      </div>
+
+      <div class="facts">
+        <div class="f"><b>&lt;10min</b><span>Check-in</span></div>
+        <div class="f"><b>08h</b><span>Café da manhã</span></div>
+        <div class="f"><b>24h</b><span>Suporte local</span></div>
+        <div class="f"><b><span class="def-badge">A DEFINIR</span></b><span>Quartos / capacidade</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= QUARTOS ================= -->
+  <section class="section bg-brisa" id="quartos">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Onde você dorme</span>
+        <h2>Escolha o seu quarto.</h2>
+        <p>Duas categorias, o mesmo cuidado. Clique para ver fotos, o que está incluso e reservar.</p>
+      </div>
+
+      <div class="cards">
+        <!-- Card → abre página do produto -->
+        <a class="pcard" href="quarto.html?tipo=standard">
+          <div class="pcard__media">
+            <span class="pcard__tag">COD010</span>
+            <span class="ph">[ A DEFINIR · foto Suíte Standard ]</span>
+          </div>
+          <div class="pcard__body">
+            <h3>Suíte Standard</h3>
+            <div class="pcard__meta">
+              <span>👥 <span class="def-badge">A DEF. pax</span></span>
+              <span>🛏️ Casal</span>
+              <span>❄️ Ar-condicionado</span>
+            </div>
+            <p class="pcard__desc">O essencial bem feito: conforto, silêncio e café da manhã incluso. Ideal pra quem vem curtir a ilha e voltar pra descansar.</p>
+            <div class="pcard__foot">
+              <span class="price"><small>Diária a partir de</small><span class="todef">R$ A DEFINIR</span></span>
+              <span class="btn btn--ghost btn--sm">Ver quarto ▸</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="pcard" href="quarto.html?tipo=master">
+          <div class="pcard__media">
+            <span class="pcard__tag">COD011</span>
+            <span class="ph">[ A DEFINIR · foto Suíte Master / Família ]</span>
+          </div>
+          <div class="pcard__body">
+            <h3>Suíte Master / Família</h3>
+            <div class="pcard__meta">
+              <span>👥 <span class="def-badge">A DEF. pax</span></span>
+              <span>🛏️ Casal + extra</span>
+              <span>❄️ Ar-condicionado</span>
+            </div>
+            <p class="pcard__desc">Mais espaço para famílias e grupos, sem abrir mão do padrão. A escolha de quem fica mais dias.</p>
+            <div class="pcard__foot">
+              <span class="price"><small>Diária a partir de</small><span class="todef">R$ A DEFINIR</span></span>
+              <span class="btn btn--ghost btn--sm">Ver quarto ▸</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PACOTES / EXTRAS ================= -->
+  <section class="section" id="pacotes">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Para tornar especial</span>
+        <h2>Pacotes e extras.</h2>
+        <p>Detalhes que mudam a estadia. Clique para ver o que inclui e adicionar à sua reserva.</p>
+      </div>
+
+      <div class="cards">
+        <a class="pcard" href="pacote.html?tipo=romantico">
+          <div class="pcard__media">
+            <span class="pcard__tag">COD013</span>
+            <span class="ph">[ A DEFINIR · foto Pacote Romântico ]</span>
+          </div>
+          <div class="pcard__body">
+            <h3>Pacote Romântico</h3>
+            <div class="pcard__meta"><span>🥂 Espumante</span><span>🌹 Decoração</span></div>
+            <p class="pcard__desc">Quarto decorado e espumante na chegada. Pra comemorar sem precisar organizar nada.</p>
+            <div class="pcard__foot">
+              <span class="price"><small>A partir de</small><span class="todef">R$ A DEFINIR</span></span>
+              <span class="btn btn--ghost btn--sm">Ver pacote ▸</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="pcard" href="pacote.html?tipo=checkout">
+          <div class="pcard__media">
+            <span class="pcard__tag">COD012</span>
+            <span class="ph">[ A DEFINIR · foto ]</span>
+          </div>
+          <div class="pcard__body">
+            <h3>Early / Late Check-out</h3>
+            <div class="pcard__meta"><span>🕐 Mais tempo</span></div>
+            <p class="pcard__desc">Chegue antes ou saia mais tarde. Aproveite o último mergulho sem correria com o barco.</p>
+            <div class="pcard__foot">
+              <span class="price"><small>Taxa a partir de</small><span class="todef">R$ A DEFINIR</span></span>
+              <span class="btn btn--ghost btn--sm">Ver extra ▸</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="pcard" href="pacote.html?tipo=dayuse">
+          <div class="pcard__media">
+            <span class="pcard__tag">Day-use</span>
+            <span class="ph">[ A DEFINIR · foto ]</span>
+          </div>
+          <div class="pcard__body">
+            <h3>Day-use</h3>
+            <div class="pcard__meta"><span>☀️ Sem pernoite</span></div>
+            <p class="pcard__desc">Use a estrutura da pousada por um dia — descanso e banho antes do barco de volta.</p>
+            <div class="pcard__foot">
+              <span class="price"><small>A partir de</small><span class="todef">R$ A DEFINIR</span></span>
+              <span class="btn btn--ghost btn--sm">Ver day-use ▸</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= COMO CHEGAR ================= -->
+  <section class="section bg-brisa" id="chegar">
+    <div class="wrap arrive">
+      <div>
+        <span class="eyebrow">Ilha sem carros</span>
+        <h2>Como chegar até nós.</h2>
+        <p style="color:var(--palmeira-70); margin-top:var(--s3)">Na Ilha Grande não entra carro — se chega de barco, e é mais simples do que parece. A gente te manda o Guia do Hóspede 48h antes com tudo confirmado.</p>
+        <ol class="arrive__steps">
+          <li><span class="n">1</span><div><h4>Chegue ao continente</h4><p>Angra dos Reis, Conceição de Jacareí ou Mangaratiba — o embarque para a ilha.</p></div></li>
+          <li><span class="n">2</span><div><h4>Travessia de barco</h4><p>Barca, escuna ou lancha até a Vila do Abraão. <span class="def-badge">A DEFINIR tempo/horários</span></p></div></li>
+          <li><span class="n">3</span><div><h4>A pé até a pousada</h4><p>Da Vila até o Paraíso são poucos minutos a pé. <span class="def-badge">A DEFINIR distância</span></p></div></li>
+        </ol>
+        <span class="arrive__note">🚫🚗 Sem stress com carro, estacionamento ou trânsito.</span>
+      </div>
+      <div class="arrive__map">
+        <span class="ph">[ A DEFINIR · mapa Google embed · endereço oficial ]</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= AVALIAÇÕES ================= -->
+  <section class="section" id="avaliacoes">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Quem já ficou</span>
+        <h2>O que os hóspedes dizem.</h2>
+      </div>
+      <div class="reviews__score">
+        <b>4,0</b>
+        <span>de 5 · <span class="def-badge">A DEFINIR nº de avaliações e fonte oficial</span></span>
+      </div>
+      <div class="reviews">
+        <blockquote class="review"><div class="stars" aria-hidden="true">★★★★★</div><p>“A DEFINIR — colar depoimento real do TripAdvisor/Google/Booking.”</p><div class="who">Hóspede · <span class="def-badge">A DEF.</span></div></blockquote>
+        <blockquote class="review"><div class="stars" aria-hidden="true">★★★★★</div><p>“A DEFINIR — depoimento real.”</p><div class="who">Hóspede · <span class="def-badge">A DEF.</span></div></blockquote>
+        <blockquote class="review"><div class="stars" aria-hidden="true">★★★★☆</div><p>“A DEFINIR — depoimento real.”</p><div class="who">Hóspede · <span class="def-badge">A DEF.</span></div></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= RESERVAR ================= -->
+  <section class="section bg-palmeira book on-dark" id="reservar">
+    <div class="wrap">
+      <span class="eyebrow">Reserve direto</span>
+      <h2 class="display">Seu descanso na ilha começa aqui.</h2>
+      <p>Reserve pelo WhatsApp com atendimento humano, ou consulte disponibilidade e valores em tempo real.</p>
+      <div class="book__actions">
+        <a class="btn btn--sol" href="https://wa.me/55XXXXXXXXXXX?text=Ol%C3%A1!%20Quero%20reservar%20na%20Pousada%20Para%C3%ADso." target="_blank" rel="noopener" data-wa>WhatsApp da pousada ▸</a>
+        <a class="btn btn--ghost-light" href="#" data-book>Ver disponibilidade</a>
+      </div>
+      <p style="margin-top:var(--s5); font-size:14px; color:#9fc4ac"><span class="def-badge">A DEFINIR</span> nº do WhatsApp e link do motor de reserva (Cloudbeds).</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= RODAPÉ ================= -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__grid">
+      <div>
+        <a class="brand" href="#top" style="margin-bottom:var(--s4)"><span class="brand__mark" aria-hidden="true"></span><span>Paraíso<small>Ilha Grande</small></span></a>
+        <p style="max-width:34ch">Pousada da rede POU · Grupo Ilha. O porto seguro do viajante na Ilha Grande.</p>
+      </div>
+      <div>
+        <h4>Navegar</h4>
+        <ul>
+          <li><a href="#sobre">Sobre a pousada</a></li>
+          <li><a href="#quartos">Quartos</a></li>
+          <li><a href="#pacotes">Pacotes</a></li>
+          <li><a href="#chegar">Como chegar</a></li>
+          <li><a href="#avaliacoes">Avaliações</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="https://wa.me/55XXXXXXXXXXX" data-wa>WhatsApp · <span class="def-badge">A DEF.</span></a></li>
+          <li><a href="#" data-def>@instagram · A DEF.</a></li>
+          <li><a href="#" data-def>e-mail · A DEF.</a></li>
+          <li>Vila do Abraão, Ilha Grande — RJ</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot__bottom">
+      <span>© 2026 Pousada Paraíso · Grupo Ilha Tour</span>
+      <span>paraiso-site · v0.1.0 · staging</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

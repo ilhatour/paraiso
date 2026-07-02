@@ -159,6 +159,9 @@ p { margin: 0 0 var(--s4); }
 }
 @media (max-width: 720px) { .sun { width: 64px; height: 64px; right: 8vw; top: 92px; } }
 
+/* ---------- Slots de imagem (fallback: some no erro, mostra placeholder) ---------- */
+.slot { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border: 0; z-index: 1; }
+
 /* ---------- Hero ---------- */
 .hero {
   position: relative;
@@ -166,11 +169,14 @@ p { margin: 0 0 var(--s4); }
   display: flex; align-items: flex-end;
   padding-top: calc(var(--nav-h) + var(--s7));
   padding-bottom: var(--s9);
-  background:
-    linear-gradient(180deg, rgba(20,64,46,.15) 0%, rgba(20,64,46,.05) 40%, rgba(20,64,46,.72) 100%),
-    linear-gradient(120deg, #bfe3cc 0%, #93d9ae 45%, #5bb87f 100%);
+  background: linear-gradient(120deg, #bfe3cc 0%, #93d9ae 45%, #5bb87f 100%);
   background-size: cover; background-position: center;
   overflow: hidden;
+}
+.hero__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
+.hero::after { /* véu p/ legibilidade do texto sobre a foto */
+  content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  background: linear-gradient(180deg, rgba(20,64,46,.15) 0%, rgba(20,64,46,.05) 40%, rgba(20,64,46,.72) 100%);
 }
 .hero__ph { /* placeholder p/ foto real — fica no topo pra não cruzar o título (que é bottom-aligned) */
   position: absolute; inset: 0;
@@ -374,6 +380,20 @@ p { margin: 0 0 var(--s4); }
   .amen { grid-template-columns: 1fr 1fr; }
   .gallery { grid-template-columns: 1fr 1fr; grid-auto-rows: 120px; }
   .about__media { height: 320px; }
+}
+
+/* ---------- Barra fixa de reserva (mobile) ---------- */
+.mobile-book {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 70;
+  display: none; align-items: center; justify-content: center; gap: var(--s2);
+  background: var(--sol); color: var(--palmeira);
+  font-family: var(--caps); text-transform: uppercase; letter-spacing: .1em; font-weight: 600; font-size: 15px;
+  padding: 15px 20px; padding-bottom: calc(15px + env(safe-area-inset-bottom));
+  box-shadow: 0 -8px 24px -12px rgba(20,64,46,.5);
+}
+@media (max-width: 720px) {
+  .mobile-book { display: flex; }
+  body { padding-bottom: 60px; }
 }
 
 /* ---------- Acessibilidade ---------- */

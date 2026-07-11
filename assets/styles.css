@@ -392,11 +392,17 @@ p { margin: 0 0 var(--s4); }
   .faq summary { padding: var(--s4) 0; font-size: 16.5px; }
 }
 
-/* ---------- Ondas entre seções (padrão do grupo, paleta Paraíso) ---------- */
-.wave { line-height: 0; margin-top: -1px; margin-bottom: -1px; position: relative; z-index: 1; }
-.wave svg { display: block; width: 100%; height: 46px; }
-.wave path { fill: var(--below, #fff); }
-@media (max-width: 720px) { .wave svg { height: 28px; } }
+/* ---------- Onda-assinatura (2 camadas, fluindo) — padrão "ilha-onda" na paleta Paraíso ---------- */
+.onda { line-height: 0; margin-bottom: -1px; overflow: hidden; position: relative; z-index: 1; }
+.onda svg { display: block; width: 100%; height: clamp(52px, 7vw, 88px); }
+.onda .l1 { animation: ondaSwayA 9s ease-in-out infinite alternate; }
+.onda .l2 { opacity: .5; animation: ondaSwayB 12s ease-in-out infinite alternate; }
+@keyframes ondaSwayA { to { transform: translateX(-72px); } }
+@keyframes ondaSwayB { to { transform: translateX(64px); } }
+
+/* Faixa forte Verde Tropical (acento, texto claro) */
+.bg-tropical { background: var(--tropical); color: #eafaf1; }
+.bg-tropical h2, .bg-tropical h3, .bg-tropical .display { color: #fff; }
 
 /* ---------- Reservar direto: nota Ilha Tour ---------- */
 .booknote {

@@ -328,7 +328,7 @@ p { margin: 0 0 var(--s4); }
 
 /* ================= Comodidades ================= */
 .amen { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--s4); }
-.amen .a { background: #fff; border: 1px solid var(--linha); border-radius: var(--radius-sm); padding: var(--s5); display: flex; flex-direction: column; gap: var(--s3); }
+.amen .a { background: #fff; border: 1px solid var(--linha); border-radius: var(--radius-sm); padding: var(--s5); display: flex; flex-direction: column; gap: var(--s3); color: var(--palmeira); }
 .amen .a .ic { width: 40px; height: 40px; border-radius: 10px; background: var(--brisa); display: grid; place-items: center; font-size: 20px; }
 .amen .a b { font-family: var(--titulo); font-size: 16px; }
 .amen .a small { font-family: var(--util); font-size: 13px; color: var(--palmeira-70); }

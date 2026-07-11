@@ -375,12 +375,43 @@ p { margin: 0 0 var(--s4); }
   .pdp__gallery { grid-template-columns: 1fr; grid-template-rows: none; height: auto; }
   .pdp__gallery .g { aspect-ratio: 3/2; }
   .pdp__gallery .g:first-child { grid-row: auto; }
-  .section { padding: var(--s8) 0; }
+  .section { padding: var(--s7) 0; }              /* mobile enxuto: menos rolagem */
   .hero__ph { padding-top: 11vh; font-size: 11px; }
-  .amen { grid-template-columns: 1fr 1fr; }
-  .gallery { grid-template-columns: 1fr 1fr; grid-auto-rows: 120px; }
-  .about__media { height: 320px; }
+  .amen { grid-template-columns: 1fr 1fr; gap: var(--s3); }
+  .amen .a { padding: var(--s4); }
+  .gallery { grid-template-columns: 1fr 1fr; grid-auto-rows: 118px; }
+  .about__media { height: 300px; }
+  .section-head { margin-bottom: var(--s5); }
+  .cards { gap: var(--s4); }
+  .info-quick { gap: var(--s2); }
+  .info-quick .q { padding: var(--s3) var(--s4); flex: 1 1 40%; }
+  .reviews { gap: var(--s4); }
+  .arrive__map { aspect-ratio: 3/2.6; }
+  .faq summary { padding: var(--s4) 0; font-size: 16.5px; }
 }
+
+/* ---------- Ondas entre seções (padrão do grupo, paleta Paraíso) ---------- */
+.wave { line-height: 0; margin-top: -1px; margin-bottom: -1px; position: relative; z-index: 1; }
+.wave svg { display: block; width: 100%; height: 46px; }
+.wave path { fill: var(--below, #fff); }
+@media (max-width: 720px) { .wave svg { height: 28px; } }
+
+/* ---------- Reservar direto: nota Ilha Tour ---------- */
+.booknote {
+  margin-top: var(--s7); padding: var(--s5) var(--s6);
+  background: rgba(255,255,255,.08); border: 1px solid var(--linha-esc);
+  border-radius: var(--radius); max-width: 640px; margin-left: auto; margin-right: auto;
+}
+.booknote p { color: #cfe6d8; font-size: 15px; margin: 0 0 var(--s4); }
+.booknote .btn { margin: 0; }
+
+/* ---------- Mapa embed (Como chegar) ---------- */
+.arrive__map iframe { width: 100%; height: 100%; border: 0; display: block; }
+
+/* ---------- Reviews: selo de anos ---------- */
+.years { display: inline-flex; align-items: baseline; gap: var(--s3); margin-bottom: var(--s6); }
+.years b { font-family: var(--display); font-size: 52px; color: var(--tropical); line-height: 1; }
+.years span { font-family: var(--util); color: var(--palmeira-70); max-width: 30ch; }
 
 /* ---------- Barra fixa de reserva (mobile) ---------- */
 .mobile-book {

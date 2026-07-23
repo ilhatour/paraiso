@@ -421,6 +421,48 @@ p { margin: 0 0 var(--s4); }
 .years b { font-family: var(--display); font-size: 52px; color: var(--tropical); line-height: 1; }
 .years span { font-family: var(--util); color: var(--palmeira-70); max-width: 30ch; }
 
+/* ================= BLOG ================= */
+.bloghead { padding-top: calc(var(--nav-h) + var(--s8)); }
+.bloghead .wrap { max-width: 760px; }
+.bloghead h1 { font-family: var(--display); font-size: clamp(32px,5vw,52px); }
+.bloghead p { color: var(--palmeira-70); font-size: 18px; margin-top: var(--s3); }
+
+.blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--s6); }
+.bcard { display: flex; flex-direction: column; background: #fff; border: 1px solid var(--linha); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-sm); transition: transform .2s ease, box-shadow .2s ease; }
+.bcard:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+.bcard__media { aspect-ratio: 16/10; background: linear-gradient(135deg, var(--menta), var(--brisa)); position: relative; }
+.bcard__media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.bcard__cat { position: absolute; top: var(--s4); left: var(--s4); font-family: var(--caps); text-transform: uppercase; letter-spacing: .1em; font-size: 11px; font-weight: 600; background: var(--tropical); color: #fff; padding: 5px 12px; border-radius: 999px; }
+.bcard__body { padding: var(--s5) var(--s5) var(--s6); display: flex; flex-direction: column; flex: 1; }
+.bcard__body h3 { font-family: var(--titulo); font-size: 21px; line-height: 1.2; margin-bottom: var(--s3); }
+.bcard__body p { font-size: 15px; color: var(--palmeira-70); margin-bottom: var(--s5); }
+.bcard__meta { margin-top: auto; font-family: var(--util); font-size: 13px; color: var(--palmeira-70); display: flex; gap: var(--s3); align-items: center; }
+.bcard__go { color: var(--tropical); font-weight: 600; }
+
+/* Artigo */
+.post { padding-top: calc(var(--nav-h) + var(--s7)); }
+.post .wrap { max-width: 760px; }
+.post__cat { font-family: var(--caps); text-transform: uppercase; letter-spacing: .16em; font-size: 12px; color: var(--tropical); font-weight: 600; }
+.post h1 { font-family: var(--display); font-size: clamp(30px, 4.6vw, 46px); line-height: 1.1; margin: var(--s3) 0 var(--s4); }
+.post__meta { display: flex; flex-wrap: wrap; gap: var(--s4); font-family: var(--util); font-size: 14px; color: var(--palmeira-70); margin-bottom: var(--s6); }
+.post__cover { aspect-ratio: 16/9; border-radius: var(--radius); overflow: hidden; margin-bottom: var(--s7); background: linear-gradient(135deg, var(--menta), var(--brisa)); }
+.post__cover img { width: 100%; height: 100%; object-fit: cover; }
+.post__body { font-size: 17.5px; line-height: 1.75; color: #234a3a; }
+.post__body h2 { font-family: var(--titulo); font-size: 26px; margin: var(--s7) 0 var(--s3); color: var(--palmeira); }
+.post__body h3 { font-family: var(--titulo); font-size: 20px; margin: var(--s6) 0 var(--s2); color: var(--palmeira); }
+.post__body p { margin: 0 0 var(--s4); }
+.post__body ul { margin: 0 0 var(--s4); padding-left: 0; list-style: none; }
+.post__body ul li { position: relative; padding-left: 26px; margin-bottom: var(--s2); }
+.post__body ul li::before { content: "☀"; position: absolute; left: 0; color: var(--sol); }
+.post__body a { color: var(--tropical); font-weight: 600; }
+.post__body blockquote { margin: var(--s6) 0; padding: var(--s4) var(--s5); background: var(--brisa); border-left: 4px solid var(--tropical); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; font-style: italic; color: var(--palmeira); }
+.post__cta { margin: var(--s8) 0 var(--s6); background: var(--palmeira); color: #eaf5ee; border-radius: var(--radius); padding: var(--s7) var(--s6); text-align: center; }
+.post__cta h3 { font-family: var(--display); font-size: 26px; color: #fff; margin-bottom: var(--s3); }
+.post__cta p { color: #cfe6d8; margin-bottom: var(--s5); }
+.post__cta .btn { margin: 4px; }
+.post__back { display: inline-block; margin-top: var(--s5); color: var(--tropical); font-weight: 600; }
+.post__related { border-top: 1px solid var(--linha); margin-top: var(--s8); padding-top: var(--s6); }
+
 /* ---------- Barra fixa de reserva (mobile) ---------- */
 .mobile-book {
   position: fixed; left: 0; right: 0; bottom: 0; z-index: 70;

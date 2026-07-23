@@ -1,0 +1,12 @@
+RewriteEngine On
+
+# Nao mexer no arquivo de verificacao do Google
+RewriteCond %{REQUEST_URI} !^/google[a-z0-9]+\.html$ [NC]
+# Redireciona (301) qualquer pedido de /pagina.html -> /pagina (URL limpa)
+RewriteCond %{THE_REQUEST} /([^.\s]+)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# Serve o arquivo .html internamente quando a URL limpa e pedida
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^.]+)$ $1.html [L]

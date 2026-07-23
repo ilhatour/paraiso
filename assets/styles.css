@@ -393,7 +393,7 @@ p { margin: 0 0 var(--s4); }
 }
 
 /* ---------- Onda-assinatura (2 camadas, fluindo) — padrão "ilha-onda" na paleta Paraíso ---------- */
-.onda { line-height: 0; margin-bottom: -1px; overflow: hidden; position: relative; z-index: 1; }
+.onda { line-height: 0; margin: -2px 0; overflow: hidden; position: relative; z-index: 1; }
 .onda svg { display: block; width: 100%; height: clamp(52px, 7vw, 88px); }
 .onda .l1 { animation: ondaSwayA 9s ease-in-out infinite alternate; }
 .onda .l2 { opacity: .5; animation: ondaSwayB 12s ease-in-out infinite alternate; }
